@@ -4,10 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ExamGeneratiorApplication {
+public class ExamGeneratorApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ExamGeneratiorApplication.class, args);
+
+        SpringApplication.run(ExamGeneratorApplication.class, args);
     }
 
 }

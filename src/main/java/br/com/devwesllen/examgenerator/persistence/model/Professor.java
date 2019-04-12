@@ -2,10 +2,11 @@ package br.com.devwesllen.examgenerator.persistence.model;
 
 import net.bytebuddy.implementation.bind.annotation.Empty;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import javax.persistence.Column;
+import javax.persistence.Entity;
 
 @Entity
 public class Professor extends AbstractEntity {
@@ -17,10 +18,12 @@ public class Professor extends AbstractEntity {
     private String email;
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 

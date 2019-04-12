@@ -18,12 +18,12 @@ public class AbstractEntity implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         AbstractEntity that = (AbstractEntity) o;
-        return Objects.equals(id, that.id);
+        return id != null ? id.equals(that.id) : that.id == null;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return id != null ? id.hashCode() : 0;
     }
 
     public Long getId() {
@@ -31,6 +31,7 @@ public class AbstractEntity implements Serializable {
     }
 
     public void setId(Long id) {
+
         this.id = id;
     }
 }
